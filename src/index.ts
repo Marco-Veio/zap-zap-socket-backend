@@ -14,6 +14,8 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(8080, () => console.log("Servidor escutando na porta 8080"));
+const PORT = process.env.PORT || 3000;
+
+server.listen(PORT);
 
 export { io };
